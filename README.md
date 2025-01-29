@@ -188,6 +188,7 @@ ____
 ## Майнд-карта
 Данная майнд карта содержит в себе набор тестов для тестирования объекта **POST**. Подробная проверка для **Get List**, **Get List By User**, **Get List By Tag**, **Get Post by id**, **Create Post**, **Update Post**, **Delete Post**
 
+## Коллекции POSTMAN
 
 
 
