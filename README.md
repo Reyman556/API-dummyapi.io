@@ -189,8 +189,9 @@ ____
 Данная майнд карта содержит в себе набор тестов для тестирования объекта **POST**. Подробная проверка для **Get List**, **Get List By User**, **Get List By Tag**, **Get Post by id**, **Create Post**, **Update Post**, **Delete Post**
 
 ## Коллекции POSTMAN
+Коллекция запросов для объектов для **Get List**, **Get List By User**, **Get List By Tag**, **Get Post by id**, **Create Post**, **Update Post**, **Delete Post**
 
-![Скачать]([https://avatars1.githubusercontent.com/u/5384215?v=3&s=460](https://disk.yandex.ru/d/LeTCQrLHQD2kcA) "Скачать")
+[Скачать](https://github.com/Reyman556/API-dummyapi.io/blob/main/POST%20dummyapi.io.postman_collection.json)
 
 
 
