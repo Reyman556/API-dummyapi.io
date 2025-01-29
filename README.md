@@ -9,6 +9,7 @@
         5. [POST /post/create (Create Post)](###POST-/post/create-(Create-Post))
         6. [PUT /post/:id (Update Post)](###PUT-/post/:id-(Update-Post))
         7. [DELETE /post/:id (Delete Post)](###DELETE-/post/:id-(Delete-Post))
+  2. [Майнд-карта](#Майнд-карта)
    
    
 
