@@ -2,7 +2,7 @@
 
  1. [Описание проекта](#Описание-проекта)
     1.  [Post](#POST)
-       1. [GET /post (Get List)](GET/post-(GetList))
+       1. [GET /post (Get List)](GET/post-(Get-List))
    
    
 
