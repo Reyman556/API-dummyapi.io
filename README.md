@@ -2,8 +2,8 @@
 
  1. [Описание проекта](#Описание-проекта)
     1.  [Post](#POST)
-        1. [GET /post (Get List)](##GET-/post-(Get-List))
-        2. [GET /user/:id/post (Get List By User)](##GET-/user/:id/post-(Get-List-By-User))
+        1. [GET /post (Get List)](###GET-/post-(Get-List))
+        2. [GET /user/:id/post (Get List By User)](###GET-/user/:id/post-(Get-List-By-User))
    
    
 
