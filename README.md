@@ -3,17 +3,17 @@
 # Описание проекта
 https://dummyapi.io/ - Это сервис для тестирования API. Для выполнения запросов необходим app-id, который генерируется автоматически после регистрации на сайте. В качестве тестиования был взят объект **POST**
 
-## POST
-
-### Get List
+### POST
+____
+### GET /post (Get List)
 Получение списка постов, отсортированных по дате создания.
 - Доступны параметры запроса пагинации.
 - Доступны параметры запроса «Создано».
 
-**Response body**
+**Response body:**
 
 **list**
-```
+```js
 {
  data: Array(Model)
  total: number(total items in DB)
@@ -22,7 +22,7 @@ https://dummyapi.io/ - Это сервис для тестирования API. 
 }
 ```
 **Post Preview**
-```
+```js
 {
  text: string(length: 6-50, preview only)
  image: string(url)
@@ -31,28 +31,76 @@ https://dummyapi.io/ - Это сервис для тестирования API. 
  owner: string(User id)
 }
 ```
-
-
-### Get List By User
+____
+### GET /user/:id/post (Get List By User)
 Получает список постов для конкретного пользователя, отсортированных по дате создания.
 - Доступны параметры запроса пагинации.
 - Доступны параметры запроса «Создано».
+  
+**Response body:**
+  
+**list**
+```js
+{
+ data: Array(Model)
+ total: number(total items in DB)
+ page: number(current page)
+ limit: number(number of items on page)
+}
+```
 
-### Get List By Tag
+**Post Preview**
+```js
+{
+ text: string(length: 6-50, preview only)
+ image: string(url)
+ likes: number(init value: 0)
+ tags: array(string)
+ owner: string(User id)
+}
+```
+____
+### GET /tag/:id/post (Get List By Tag)
 Получает список постов для определенного тега, отсортированных по дате создания.
 - Доступны параметры запроса пагинации.
 - Доступны параметры запроса «Создано».
 
-### Get Post by id
+**Response body:**
+
+**list**
+```js
+{
+ data: Array(Model)
+ total: number(total items in DB)
+ page: number(current page)
+ limit: number(number of items on page)
+}
+```
+**Post Preview**
+```js
+{
+ text: string(length: 6-50, preview only)
+ image: string(url)
+ likes: number(init value: 0)
+ tags: array(string)
+ owner: string(User id)
+}
+```
+  
+____
+### GET /post/:id (Get Post by id)
 Получение полных данных поста по идентификатору поста
 
-### Create Post
+____
+### POST /post/create (Create Post)
 Создать новый пост, вернуть данные о созданном посте.
 Тело: Создание поста (поля владелец и пост обязательны для заполнения)
 
-### Update Post
+____
+### PUT /post/:id (Update Post)
 Обновление поста по id, возврат обновленных данных поста
 Тело: Данные поста, (поле владельца запрещено для обновления)
 
-###  Delete Post
+____
+### DELETE /post/:id (Delete Post)
 Удалить сообщение по id, вернуть id удаленного сообщения
