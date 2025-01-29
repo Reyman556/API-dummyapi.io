@@ -10,6 +10,29 @@ https://dummyapi.io/ - Это сервис для тестирования API. 
 - Доступны параметры запроса пагинации.
 - Доступны параметры запроса «Создано».
 
+**Response body**
+
+**list**
+```
+{
+ data: Array(Model)
+ total: number(total items in DB)
+ page: number(current page)
+ limit: number(number of items on page)
+}
+```
+**Post Preview**
+```
+{
+ text: string(length: 6-50, preview only)
+ image: string(url)
+ likes: number(init value: 0)
+ tags: array(string)
+ owner: string(User id)
+}
+```
+
+
 ### Get List By User
 Получает список постов для конкретного пользователя, отсортированных по дате создания.
 - Доступны параметры запроса пагинации.
